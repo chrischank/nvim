@@ -43,15 +43,5 @@ return require('packer').startup(function(use)
 	  }
   }
   -- Lua
-  use {
-	  "ahmedkhalf/jupyter-nvim",
-	  run = ":UpdateRemotePlugins",
-	  config = function()
-		  require("jupyter-nvim").setup {
-			  -- your configuration comes here
-			  -- or leave it empty to use the default settings
-			  -- refer to the configuration section below
-		  }
-	  end
-  }
+  use 'luk400/vim-jukit'
 end)
