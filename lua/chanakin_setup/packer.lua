@@ -43,7 +43,6 @@ return require('packer').startup(function(use)
 	  }
   }
   -- Lua
-  use 'luk400/vim-jukit'
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
 end)
