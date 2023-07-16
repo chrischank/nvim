@@ -42,7 +42,32 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
-  -- Lua
+  -- Airline
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
+
+  -- GPT
+  use ({
+    "Bryley/neoai.nvim",
+    require = { "MunifTanjim/nui.nvim" },
+    cmd = {
+        "NeoAI",
+        "NeoAIOpen",
+        "NeoAIClose",
+        "NeoAIToggle",
+        "NeoAIContext",
+        "NeoAIContextOpen",
+        "NeoAIContextClose",
+        "NeoAIInject",
+        "NeoAIInjectCode",
+        "NeoAIInjectContext",
+        "NeoAIInjectContextCode",
+    },
+    config = function()
+        require("neoai").setup({
+            -- Options go here
+        })
+    end,
+})
+
 end)
