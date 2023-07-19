@@ -78,7 +78,10 @@ return require('packer').startup(function(use)
             {
                 name = "openai",
                 model = "gpt-4",
-                params = nil,
+                params = {
+                    temperature = 0.4,
+                    top_p = 0.4
+                },
             },
         },
         register_output = {
