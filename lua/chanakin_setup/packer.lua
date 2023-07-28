@@ -79,8 +79,9 @@ return require('packer').startup(function(use)
                 name = "openai",
                 model = "gpt-4",
                 params = {
+                    -- messages = {role: "system", content: "You are a suggestive and constructive programming assistant."},
                     temperature = 0.4,
-                    top_p = 0.4
+                    top_p = 0.3
                 },
             },
         },
