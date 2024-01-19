@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1699180677/share/lua/5.1/?.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1699180677/share/lua/5.1/?/init.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1699180677/lib/luarocks/rocks-5.1/?.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1699180677/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1699180677/lib/lua/5.1/?.so"
+local package_path_str = "/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitlab.vim.git"] = {
+    loaded = true,
+    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/gitlab.vim.git",
+    url = "git@gitlab.com:gitlab-org/editor-extensions/gitlab.vim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -131,7 +136,7 @@ _G.packer_plugins = {
   },
   ["neoai.nvim"] = {
     commands = { "NeoAI", "NeoAIOpen", "NeoAIClose", "NeoAIToggle", "NeoAIContext", "NeoAIContextOpen", "NeoAIContextClose", "NeoAIInject", "NeoAIInjectCode", "NeoAIInjectContext", "NeoAIInjectContextCode" },
-    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    ì\a\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\4\tname\14gitcommit\16use_context\1\tdesc generate git commit message\bkey\15<leader>ag\nmodes\1\2\0\0\6v\1\0\5\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \tname\ftextify\16use_context\2\tdesc\21fix text with AI\bkey\15<leader>as\fopen_ai\fapi_key\1\0\0\1\0\1\benv\19OPENAI_API_KEY\rmappings\1\0\2\14select_up\n<C-k>\16select_down\n<C-j>\fprompts\19context_prompt\1\0\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\0\0\vmodels\vparams\1\0\2\16temperature\4š³æÌ\t™³æþ\3\ntop_p\4³æÌ™\3³æÌþ\3\1\0\2\tname\vopenai\nmodel\23gpt-4-1106-preview\aui\1\0\0\1\0\5\22output_popup_text\nNeoAI\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\21input_popup_text\vPrompt\nsetup\nneoai\frequire\0" },
+    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    ì\a\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\4\16use_context\1\bkey\15<leader>ag\tdesc generate git commit message\tname\14gitcommit\nmodes\1\2\0\0\6v\1\0\5\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \16use_context\2\bkey\15<leader>as\tdesc\21fix text with AI\tname\ftextify\fopen_ai\fapi_key\1\0\0\1\0\1\benv\19OPENAI_API_KEY\rmappings\1\0\2\16select_down\n<C-j>\14select_up\n<C-k>\fprompts\19context_prompt\1\0\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\0\0\vmodels\vparams\1\0\2\ntop_p\4³æÌ™\3³æÌþ\3\16temperature\4š³æÌ\t™³æþ\3\1\0\2\tname\vopenai\nmodel\23gpt-4-1106-preview\aui\1\0\0\1\0\5\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\21input_popup_text\vPrompt\22output_popup_text\nNeoAI\nsetup\nneoai\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -209,41 +214,6 @@ time([[Defining packer_plugins]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'NeoAIContextClose', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIContextClose', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIContextClose ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'NeoAIInject', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInject', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIInject ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'NeoAIInjectCode', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInjectCode', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIInjectCode ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'NeoAIInjectContext', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInjectContext', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIInjectContext ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'NeoAIInjectContextCode', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInjectContextCode', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIInjectContextCode ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'NeoAI', function(cmdargs)
           require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAI', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -285,6 +255,41 @@ pcall(vim.api.nvim_create_user_command, 'NeoAIContextOpen', function(cmdargs)
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('NeoAIContextOpen ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIContextClose', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIContextClose', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIContextClose ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIInject', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInject', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIInject ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIInjectCode', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInjectCode', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIInjectCode ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIInjectContext', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInjectContext', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIInjectContext ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIInjectContextCode', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIInjectContextCode', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIInjectContextCode ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 
