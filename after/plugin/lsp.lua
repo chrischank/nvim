@@ -4,15 +4,15 @@ lsp.preset('recommended')
 
 -- Install these servers
 lsp.ensure_installed({
-  'tsserver',
+  'ts_ls',
   'eslint',
   'lua_ls',
 })
 
 -- Pass arguments to a language server
-lsp.configure('tsserver', {
+lsp.configure('ts_ls', {
   on_attach = function(client, bufnr)
-    print('hello tsserver')
+    print('hello ts_ls')
   end,
   settings = {
     completions = {
