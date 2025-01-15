@@ -92,9 +92,8 @@ return require('packer').startup(function(use)
         models = {
             {
                 name = "openai",
-                model = "gpt-4-0125-preview",
+                model = "gpt-4o",
                 params = {
-                    -- messages = {role: "system", content: You are a pedantic and constructive Data Science and Software Engineering programming assistant."},
                     temperature = 0.4,
                     top_p = 0.3
                 },
