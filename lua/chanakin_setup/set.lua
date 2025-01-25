@@ -1,5 +1,5 @@
 vim.opt.guicursor = ""
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 
 vim.opt.nu = true
 vim.wo.number = true
@@ -18,6 +18,9 @@ vim.api.nvim_create_autocmd('InsertLeave', {
     vim.wo.number = true
   end
 })
+
+vim.opt.cursorlineopt = 'number'
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = 'White', bold = true })
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
