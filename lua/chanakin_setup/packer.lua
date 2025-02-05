@@ -8,16 +8,19 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+  -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
   }
-
   use "EdenEast/nightfox.nvim" -- Packer
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use 'nvim-treesitter/playground'
   use 'nvim-lua/plenary.nvim'
-  use 'ThePrimeagen/harpoon'
+  use {
+      "ThePrimeagen/harpoon",
+      branch = "harpoon2",
+      requires = { {"nvim-lua/plenary.nvim"} }
+  }
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
   use {
@@ -47,19 +50,19 @@ return require('packer').startup(function(use)
   use 'vim-airline/vim-airline-themes'
 
   -- Gitlab Duo
-  use {
-       'git@gitlab.com:gitlab-org/editor-extensions/gitlab.vim.git',
-       event = { 'BufReadPre', 'BufNewFile' }, -- Activate when a file is created/opened
-       ft = { 'go', 'javascript', 'python', 'ruby' }, -- Activate when a supported filetype is open
-       cond = function()
-         return vim.env.GITLAB_TOKEN ~= nil and vim.env.GITLAB_TOKEN ~= '' -- Only activate is token is present in environment variable (remove to use interactive workflow)
-       end,
-       opts = {
-         statusline = {
-           enabled = true, -- Hook into the builtin statusline to indicate the status of the GitLab Duo Code Suggestions integration
-         },
-       },
-     }
+  --use {
+  --     'git@gitlab.com:gitlab-org/editor-extensions/gitlab.vim.git',
+  --     event = { 'BufReadPre', 'BufNewFile' }, -- Activate when a file is created/opened
+  --     ft = { 'go', 'javascript', 'python', 'ruby' }, -- Activate when a supported filetype is open
+  --     cond = function()
+  --       return vim.env.GITLAB_TOKEN ~= nil and vim.env.GITLAB_TOKEN ~= '' -- Only activate is token is present in environment variable (remove to use interactive workflow)
+  --     end,
+  --     opts = {
+  --       statusline = {
+  --         enabled = true, -- Hook into the builtin statusline to indicate the status of the GitLab Duo Code Suggestions integration
+  --       },
+  --     },
+  --   }
 
   -- GPT
   use 'MunifTanjim/nui.nvim'
