@@ -6,7 +6,6 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
   use 'neovim/nvim-lspconfig'
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
@@ -14,7 +13,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use "EdenEast/nightfox.nvim" -- Packer
-  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use 'nvim-treesitter/playground'
   use 'nvim-lua/plenary.nvim'
   use {
@@ -50,7 +49,7 @@ return require('packer').startup(function(use)
   -- Airline
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
-  use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
+
   -- Gitlab Duo
   --use {
   --     'git@gitlab.com:gitlab-org/editor-extensions/gitlab.vim.git',
