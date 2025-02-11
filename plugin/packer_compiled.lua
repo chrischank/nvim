@@ -109,6 +109,12 @@ _G.packer_plugins = {
     path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["glow.nvim"] = {
+    config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tglow\frequire\0" },
+    loaded = true,
+    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/glow.nvim",
+    url = "https://github.com/ellisonleao/glow.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -127,19 +133,11 @@ _G.packer_plugins = {
   ["mason.nvim"] = {
     loaded = true,
     path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
+    url = "https://github.com/wbthomason/mason.nvim"
   },
   ["neoai.nvim"] = {
     commands = { "NeoAI", "NeoAIOpen", "NeoAIClose", "NeoAIToggle", "NeoAIContext", "NeoAIContextOpen", "NeoAIContextClose", "NeoAIInject", "NeoAIInjectCode", "NeoAIInjectContext", "NeoAIInjectContextCode" },
-<<<<<<< HEAD
-    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    Ž\t\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\a\nmodes\0\18NeoAIContext \0\tname\14gitcommit\vprompt\0\16use_context\1\tdesc generate git commit message\bkey\15<leader>ag\nmodes\1\2\0\0\6v\1\0\a\nmodes\0\18NeoAIContext \0\tname\ftextify\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \16use_context\2\tdesc\21fix text with AI\bkey\15<leader>as\fopen_ai\fapi_key\1\0\1\fapi_key\0\1\0\2\nvalue\0\benv\19OPENAI_API_KEY\rmappings\1\0\2\14select_up\n<C-k>\16select_down\n<C-j>\fprompts\19context_prompt\1\0\1\19context_prompt\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\2\6c\0\6g\0\0\vmodels\vparams\1\0\2\16temperature\4š³æÌ\t™³æþ\3\ntop_p\4³æÌ™\3³æÌþ\3\1\0\3\nmodel\vgpt-4o\tname\vopenai\vparams\0\aui\1\0\b\rmappings\0\vinject\0\fopen_ai\0\vmodels\0\20register_output\0\aui\0\14shortcuts\0\fprompts\0\1\0\5\21input_popup_text\vPrompt\22output_popup_text\nNeoAI\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\nsetup\nneoai\frequire\0" },
-=======
-<<<<<<< HEAD
-    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    \t\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\a\vprompt\0\16use_context\1\tname\14gitcommit\bkey\15<leader>ag\tdesc generate git commit message\19extend_load_ft\0\nmodes\0\nmodes\1\2\0\0\6v\1\0\a\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \16use_context\2\tname\ftextify\bkey\15<leader>as\tdesc\21fix text with AI\19extend_load_ft\0\nmodes\0\fopen_ai\fapi_key\1\0\1\fapi_key\0\1\0\2\benv\19OPENAI_API_KEY\nvalue\0\rmappings\1\0\2\16select_down\n<C-j>\14select_up\n<C-k>\fprompts\19context_prompt\1\0\1\19context_prompt\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\2\6c\0\6g\0\0\vmodels\vparams\1\0\2\ntop_p\4³æÌ™\3³æÌþ\3\16temperature\4š³æÌ\t™³æþ\3\1\0\3\vparams\0\tname\vopenai\nmodel\vgpt-4o\aui\1\0\b\vmodels\0\20register_output\0\fprompts\0\rmappings\0\aui\0\fopen_ai\0\vinject\0\14shortcuts\0\1\0\5\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\21input_popup_text\vPrompt\22output_popup_text\nNeoAI\nsetup\nneoai\frequire\0" },
-=======
-    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    ö\b\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\a\tdesc generate git commit message\16use_context\1\vprompt\0\tname\14gitcommit\nmodes\0\6À\0\bkey\15<leader>ag\nmodes\1\2\0\0\6v\1\0\a\tdesc\21fix text with AI\16use_context\2\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \tname\ftextify\nmodes\0\6À\0\bkey\15<leader>as\fopen_ai\fapi_key\1\0\1\fapi_key\0\1\0\2\benv\19OPENAI_API_KEY\nvalue\0\rmappings\1\0\2\16select_down\n<C-j>\14select_up\n<C-k>\fprompts\19context_prompt\1\0\1\19context_prompt\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\2\6g\0\6c\0\0\vmodels\vparams\1\0\2\ntop_p\4³æÌ™\3³æÌþ\3\16temperature\4š³æÌ\t™³æþ\3\1\0\3\nmodel\vgpt-4o\vparams\0\tname\vopenai\aui\1\0\b\vinject\0\fprompts\0\vmodels\0\20register_output\0\rmappings\0\fopen_ai\0\aui\0\14shortcuts\0\1\0\5\21input_popup_text\vPrompt\22output_popup_text\nNeoAI\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\nsetup\nneoai\frequire\0" },
->>>>>>> parent of e079c98 (feat: markdown glow plugin)
->>>>>>> parent of 06a872f (fix: packer and lsp fix)
+    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    ö\b\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\a\bkey\15<leader>ag\tdesc generate git commit message\nmodes\0\tname\14gitcommit\vprompt\0\16use_context\1\0060\0\nmodes\1\2\0\0\6v\1\0\a\bkey\15<leader>as\tdesc\21fix text with AI\nmodes\0\tname\ftextify\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \16use_context\2\0060\0\fopen_ai\fapi_key\1\0\1\fapi_key\0\1\0\2\benv\19OPENAI_API_KEY\nvalue\0\rmappings\1\0\2\14select_up\n<C-k>\16select_down\n<C-j>\fprompts\19context_prompt\1\0\1\19context_prompt\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\2\6g\0\6c\0\0\vmodels\vparams\1\0\2\16temperature\4š³æÌ\t™³æþ\3\ntop_p\4³æÌ™\3³æÌþ\3\1\0\3\nmodel\vgpt-4o\vparams\0\tname\vopenai\aui\1\0\b\20register_output\0\vmodels\0\aui\0\rmappings\0\fopen_ai\0\fprompts\0\14shortcuts\0\vinject\0\1\0\5\22output_popup_text\nNeoAI\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\21input_popup_text\vPrompt\nsetup\nneoai\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -170,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["packer.nvim"] = {
+    loaded = true,
+    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
     loaded = true,
@@ -214,14 +217,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: glow.nvim
+time([[Config for glow.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tglow\frequire\0", "config", "glow.nvim")
+time([[Config for glow.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> parent of 06a872f (fix: packer and lsp fix)
 pcall(vim.api.nvim_create_user_command, 'NeoAI', function(cmdargs)
           require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAI', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -229,7 +231,6 @@ pcall(vim.api.nvim_create_user_command, 'NeoAI', function(cmdargs)
           require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('NeoAI ', 'cmdline')
       end})
->>>>>>> parent of e079c98 (feat: markdown glow plugin)
 pcall(vim.api.nvim_create_user_command, 'NeoAIOpen', function(cmdargs)
           require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIOpen', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -300,19 +301,6 @@ pcall(vim.api.nvim_create_user_command, 'NeoAIInjectContextCode', function(cmdar
           require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('NeoAIInjectContextCode ', 'cmdline')
       end})
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-pcall(vim.api.nvim_create_user_command, 'NeoAI', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAI', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAI ', 'cmdline')
-      end})
-=======
->>>>>>> parent of e079c98 (feat: markdown glow plugin)
->>>>>>> parent of 06a872f (fix: packer and lsp fix)
 time([[Defining lazy-load commands]], false)
 
 

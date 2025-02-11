@@ -6,6 +6,8 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+  use 'wbthomason/mason.nvim'
   use 'neovim/nvim-lspconfig'
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
@@ -49,6 +51,7 @@ return require('packer').startup(function(use)
   -- Airline
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
+  use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
 
   -- Gitlab Duo
   --use {
