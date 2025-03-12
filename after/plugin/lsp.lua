@@ -1,9 +1,7 @@
 local lsp = require("lsp-zero")
 
--- lsp.preset("recommended")
-
 -- Fix Undefined global 'vim'
-lsp.configure('lua_ls', {
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls({
     settings = {
         Lua = {
             diagnostics = {
@@ -11,7 +9,7 @@ lsp.configure('lua_ls', {
             }
         }
     }
-})
+}))
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -26,7 +24,34 @@ cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
 
 cmp.setup({
-  mapping = cmp_mappings
+  mapping = cmp_mappings,
+  snippet = {
+    expand = function(args)
+      require('luasnip').lsp_expand(args.body)
+    end,
+  },
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+    { name = 'buffer' },
+    { name = 'path' },
+  },
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
+  formatting = {
+    fields = {'abbr', 'kind', 'menu'},
+    format = function(entry, item)
+      item.menu = ({
+        nvim_lsp = '[LSP]',
+        luasnip = '[Snippet]',
+        buffer = '[Buffer]',
+        path = '[Path]',
+      })[entry.source.name]
+      return item
+    end,
+  },
 })
 
 -- Replace set_preferences with nvim's diagnostic configuration
@@ -40,7 +65,12 @@ vim.diagnostic.config({
             [vim.diagnostic.severity.INFO] = 'I'
         }
     },
-    suggest_lsp_servers = false,
+    float = {
+        border = "rounded",
+        source = "always",
+    },
+    update_in_insert = true,
+    severity_sort = true,
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -57,5 +87,9 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
+
+require('mason-lspconfig').setup_handlers({
+  lsp.default_setup,
+})
 
 lsp.setup()
