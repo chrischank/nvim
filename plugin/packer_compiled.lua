@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?/init.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?.lua;/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/christopherchan/.cache/nvim/packer_hererocks/2.1.1736781742/lib/lua/5.1/?.so"
+local package_path_str = "/home/chris/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?.lua;/home/chris/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?/init.lua;/home/chris/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?.lua;/home/chris/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/chris/.cache/nvim/packer_hererocks/2.1.1736781742/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,142 +76,142 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-nvim-lua"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/cmp-path",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["friendly-snippets"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["glow.nvim"] = {
     config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tglow\frequire\0" },
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/glow.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/glow.nvim",
     url = "https://github.com/ellisonleao/glow.nvim"
   },
   harpoon = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["neoai.nvim"] = {
     commands = { "NeoAI", "NeoAIOpen", "NeoAIClose", "NeoAIToggle", "NeoAIContext", "NeoAIContextOpen", "NeoAIContextClose", "NeoAIInject", "NeoAIInjectCode", "NeoAIInjectContext", "NeoAIInjectContextCode" },
-    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    Ž\t\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\a\16use_context\1\18lsp-zero.nvim\0\nmodes\0\bkey\15<leader>ag\tdesc generate git commit message\tname\14gitcommit\vprompt\0\nmodes\1\2\0\0\6v\1\0\a\16use_context\2\18lsp-zero.nvim\0\nmodes\0\bkey\15<leader>as\tdesc\21fix text with AI\tname\ftextify\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \fopen_ai\fapi_key\1\0\1\fapi_key\0\1\0\2\benv\19OPENAI_API_KEY\nvalue\0\rmappings\1\0\2\14select_up\n<C-k>\16select_down\n<C-j>\fprompts\19context_prompt\1\0\1\19context_prompt\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\2\6g\0\6c\0\0\vmodels\vparams\1\0\2\16temperature\4š³æÌ\t™³æþ\3\ntop_p\4³æÌ™\3³æÌþ\3\1\0\3\nmodel\vgpt-4o\tname\vopenai\vparams\0\aui\1\0\b\20register_output\0\rmappings\0\fopen_ai\0\fprompts\0\14shortcuts\0\vinject\0\aui\0\vmodels\0\1\0\5\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\21input_popup_text\vPrompt\22output_popup_text\nNeoAI\nsetup\nneoai\frequire\0" },
+    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1L\0\2\0«\1\0\1\5\0\3\0\6'\1\0\0'\2\1\0'\3\2\0\18\4\0\0&\1\4\1L\1\2\0(to in our upcoming conversations:\n\n:messages. Here is the code/text that I want to refer 6Hey, I'd like to provide some context for future ­\2\0\0\4\0\5\0\b'\0\0\0006\1\1\0009\1\2\0019\1\3\1'\3\4\0B\1\2\2&\0\1\0L\0\2\0\22git diff --cached\vsystem\afn\bvimé\1                        Using the following git diff generate a consise and\n                        clear git commit message, with a short title summary\n                        that is 75 characters or less:\n                    ú\b\1\0\a\0%\00006\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\3\0005\4\6\0005\5\a\0=\5\b\4>\4\1\3=\3\t\0025\3\v\0003\4\n\0=\4\f\0036\4\0\0'\6\r\0B\4\2\0029\4\14\4=\4\15\3=\3\16\0025\3\17\0=\3\18\0025\3\20\0003\4\19\0=\4\21\3=\3\22\0025\3\23\0=\3\24\0025\3\26\0005\4\25\0=\4\27\3=\3\28\0024\3\3\0005\4\29\0005\5\30\0=\5\31\4>\4\1\0035\4 \0003\5!\0=\5\"\0045\5#\0=\5\31\4>\4\2\3=\3$\2B\0\2\1K\0\1\0\14shortcuts\1\2\0\0\6n\vprompt\0\1\0\a\vprompt\0\16use_context\1\b~+$\0\tdesc generate git commit message\bkey\15<leader>ag\nmodes\0\tname\14gitcommit\nmodes\1\2\0\0\6v\1\0\a\vpromptÌ\1                    Please rewrite the text to make it more readable, clear,\n                    concise, and fix any grammatical, punctuation, or spelling\n                    errors\n                \16use_context\2\b~+$\0\tdesc\21fix text with AI\bkey\15<leader>as\nmodes\0\tname\ftextify\fopen_ai\fapi_key\1\0\1\fapi_key\0\1\0\2\benv\19OPENAI_API_KEY\nvalue\0\rmappings\1\0\2\14select_up\n<C-k>\16select_down\n<C-j>\fprompts\19context_prompt\1\0\1\19context_prompt\0\0\vinject\1\0\1\17cutoff_width\3K\20register_output\6c\26extract_code_snippets\16neoai.utils\6g\1\0\2\6c\0\6g\0\0\vmodels\vparams\1\0\2\16temperature\4š³æÌ\t™³æþ\3\ntop_p\4³æÌ™\3³æÌþ\3\1\0\3\nmodel\vgpt-4o\vparams\0\tname\vopenai\aui\1\0\b\vmodels\0\aui\0\20register_output\0\rmappings\0\fopen_ai\0\fprompts\0\14shortcuts\0\vinject\0\1\0\5\22output_popup_text\nNeoAI\vsubmit\f<Enter>\24output_popup_height\3P\nwidth\3\30\21input_popup_text\vPrompt\nsetup\nneoai\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/opt/neoai.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/opt/neoai.nvim",
     url = "https://github.com/Bryley/neoai.nvim"
   },
   ["nightfox.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/playground",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-airline"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/vim-airline",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
   ["vim-airline-themes"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,
-    path = "/Users/christopherchan/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    path = "/home/chris/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
@@ -224,27 +224,6 @@ time([[Config for glow.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'NeoAIClose', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIClose', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIClose ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'NeoAIToggle', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIToggle ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'NeoAIContext', function(cmdargs)
-          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIContext', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('NeoAIContext ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'NeoAIContextOpen', function(cmdargs)
           require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIContextOpen', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -300,6 +279,27 @@ pcall(vim.api.nvim_create_user_command, 'NeoAIOpen', function(cmdargs)
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('NeoAIOpen ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIClose', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIClose', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIClose ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIToggle', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIToggle ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NeoAIContext', function(cmdargs)
+          require('packer.load')({'neoai.nvim'}, { cmd = 'NeoAIContext', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neoai.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NeoAIContext ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 
