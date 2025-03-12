@@ -37,8 +37,18 @@ cmp.setup({
     { name = 'path' },
   },
   window = {
-    completion = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
+    completion = cmp.config.window.bordered({
+      border = "none",
+      source = "always",
+      winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
+      winblend = 80
+    }),
+    documentation = cmp.config.window.bordered({
+      border = "none",
+      source = "always",
+      winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
+      winblend = 80
+    }),
   },
   formatting = {
     fields = {'abbr', 'kind', 'menu'},
@@ -68,6 +78,8 @@ vim.diagnostic.config({
     float = {
         border = "rounded",
         source = "always",
+        winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
+        winblend = 80
     },
     update_in_insert = true,
     severity_sort = true,
